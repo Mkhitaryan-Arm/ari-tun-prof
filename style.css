@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1544923246-77307dd654ca?q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content button {
+    padding: 12px 30px;
+    background: #e67e22;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-content button:hover {
+    background: #d35400;
+}
+
+#tours {
+    padding: 50px 5%;
+    background: #f4f4f4;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.tour-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tour-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-card h3, .tour-card p {
+    padding: 15px;
+}
+
+ Modal-ի ոճերը */
+ #bookingModal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 2000;
+}
+.modal-content {
+    background: white; padding: 30px; border-radius: 10px;
+    width: 90%; max-width: 400px; position: relative;
+}
+.close { position: absolute; right: 15px; top: 10px; cursor: pointer; font-size: 24px; }
+#bookForm input { width: 100%; margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+#bookForm button { width: 100%; padding: 10px; background: #e67e22; color: white; border: none; cursor: pointer; }
+
+ Ֆիլտրի կոճակները */
+ .filter-buttons { text-align: center; padding: 20px; }
+.filter-buttons button { margin: 5px; padding: 8px 20px; border: 1px solid #e67e22; background: none; cursor: pointer; border-radius: 20px; }
+.filter-buttons button:hover { background: #e67e22; color: white; }
+
+.hidden {
+    display: none !important;
+}
+
+#details-page {
+    padding: 100px 10%;
+    background: #fff;
+    min-height: 100vh;
+}
+
+.marz-info img.full-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.marz-info h1 { color: #2c3e50; margin-bottom: 15px; }
+.marz-info .desc { font-size: 1.2rem; line-height: 1.6; margin-bottom: 20px; }
+.marz-info ul { list-style: none; padding-left: 0; }
+.marz-info li { padding: 8px 0; border-bottom: 1px solid #eee; }
+
+.btn-back {
+    background: #2c3e50; color: white; border: none;
+    padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-bottom: 20px;
+}
+
+.btn-book-now {
+    margin-top: 30px; padding: 15px 40px;
+    background: #27ae60; color: white; border: none;
+    font-size: 1.1rem; cursor: pointer; border-radius: 5px;
+}  
